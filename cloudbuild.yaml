@@ -12,10 +12,9 @@ steps:
 
   # Entrypoint, timeout and environment variables
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: 'gcr.io/cloud-builders/docker'
+    entrypoint: 'bash'
     timeout: 240s
-    args: 
-          'beta',
+    args: ['beta',
           'run', 
           'deploy', 
           'trigger-svc-kreationsbykgola',
@@ -29,7 +28,7 @@ steps:
           '0',
           '--max-instances',
           '1',
-          '--allow-unauthenticated'
+           '--allow-unauthenticated']
            
     images:          
      'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola',
