@@ -14,8 +14,11 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'gcloud'
     timeout: 240s
-    args: ['beta', 'run', 
-           'deploy', 'trigger-svc-kreationsbykgola',
+    args: 
+          'beta',
+           'run', 
+           'deploy', 
+           'trigger-svc-kreationsbykgola',
            '--image', 
            'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola',
            '--region',
@@ -27,6 +30,6 @@ steps:
            '--max-instances',
            '1',
            '--allow-unauthenticated'
-           ]
+           
     images:          
      'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola',
