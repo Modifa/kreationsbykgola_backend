@@ -19,7 +19,7 @@ steps:
           'deploy', 
           'trigger-svc-kreationsbykgola',
           '--image', 
-          'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola',
+          'us-central1-docker.pkg.dev/${PROJECT_ID}/modifa_images/kreationsbykgola',
           '--region',
           'central1',
           'platform',
