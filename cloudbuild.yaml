@@ -1,15 +1,4 @@
 steps:
-  # Docker Build
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 
-           'us-central1-docker.pkg.dev/${PROJECT_ID}/modifa_images/myimage', 
-           '.']
-
-  # Docker Push
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 
-           'us-central1-docker.pkg.dev/${PROJECT_ID}/modifa_images/myimage']
-
   # Entrypoint, timeout and environment variables
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'bash'
@@ -19,7 +8,6 @@ steps:
           'deploy', 
           'trigger-svc-kreationsbykgola',
           '--image', 
-          'us-central1-docker.pkg.dev/${PROJECT_ID}/modifa_images/kreationsbykgola',
           '--region',
           'central1',
           'platform',
