@@ -30,5 +30,4 @@ steps:
           '1',
            '--allow-unauthenticated']
            
-    images:          
-     'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola',
+    images: 'us-central1-docker.pkg.dev/${PROJECT_ID}/my-docker-repo/kreationsbykgola'
