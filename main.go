@@ -34,7 +34,8 @@ func setupRouter() *gin.Engine {
 }
 
 func setupConfigs() {
-	os.Setenv("CURRENTDOMAIN", "https://906b-102-32-62-145.in.ngrok.io")
+	// os.Setenv("CURRENTDOMAIN", "https://906b-102-32-62-145.in.ngrok.io")
+	os.Setenv("CURRENTDOMAIN", "https://kreationsbykgola.uc.r.appspot.com")
 
 	os.Setenv("EmailFrom", "projectcommunication123@gmail.com")
 	//sk_test_e4186c254bd9ccdcf8b9c012db2624fb8ad1b239
