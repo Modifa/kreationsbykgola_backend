@@ -58,7 +58,7 @@ func setupConfigs() {
 
 func main() {
 	//Uncommented When Not Debugging
-	// gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.ReleaseMode)
 	// export GIN_MODE=release
 
 	// gocron.Start()
